@@ -1,0 +1,47 @@
+.carsContainer {
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+}
+.carCards {
+  padding: 1.75rem 1.5rem 1.5rem;
+  box-shadow: 0 12px 24px 0 rgba(16, 76, 139, 0.16);
+  border-radius: 1rem;
+}
+.cardsImage {
+  width: 208px;
+  height: 104px;
+  flex-grow: 0;
+}
+.cardsHeader {
+  margin: 1.5rem 0 1rem;
+  font-size: var(--small-font-size);
+}
+.cardsScore {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  column-gap: 0.3rem;
+  color: var(--title-color-dark);
+  font-size: var(--tiny-font-size);
+  font-weight: var(--font-medium);
+}
+.scoresReview {
+  color: var(--sub-color);
+  font-weight: normal;
+}
+.cardsInfos {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1.25rem;
+  row-gap: 0.5rem;
+}
+.cardsInfo {
+  display: flex;
+  align-items: center;
+  column-gap: 4px;
+}
+.infosText {
+  font-size: var(--tiny-font-size);
+  font-weight: normal;
+  color: var(--sub-color);
+}
