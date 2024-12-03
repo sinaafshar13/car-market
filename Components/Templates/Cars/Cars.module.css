@@ -1,6 +1,7 @@
 .carsContainer {
   grid-template-columns: repeat(4, 1fr);
   column-gap: 2rem;
+  margin-bottom: 4rem;
 }
 .carCards {
   padding: 1.75rem 1.5rem 1.5rem;
@@ -31,17 +32,41 @@
 }
 .cardsInfos {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 1.25rem;
-  row-gap: 0.5rem;
+  justify-content: space-between;
 }
 .cardsInfo {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: .5rem;
+}
+.cardsInfo :nth-child(n) {
+  display: flex;
   align-items: center;
-  column-gap: 4px;
+  column-gap: .25rem;
 }
 .infosText {
   font-size: var(--tiny-font-size);
   font-weight: normal;
   color: var(--sub-color);
+}
+.cardsPrice{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.5rem;
+  padding: 1.5rem 0;
+  border-top: 1px solid var(--sub-color);
+  font-size: var(--small-font-size);
+  font-weight: var(--font-medium);
+  color: var(--text-color);
+}
+.priceNumber {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-semi-bold);
+  color: var(--title-color-dark);
+}
+.cardsButton {
+  width: 100%;
+  font-size: var(--small-font-size);
 }
