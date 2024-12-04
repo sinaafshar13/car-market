@@ -1,12 +1,8 @@
 import clsx from "clsx";
 import styles from "./Cars.module.css";
-import Star from "../../SVGs/Star";
-import User from "../../SVGs/User";
-import Gearbox from "../../SVGs/Gearbox";
-import AirConditioner from "../../SVGs/AirConditioner";
-import Doors from "../../SVGs/Doors";
-import Image from "next/image"; // Assuming you're using Next.js
-import Car1 from "../../../public/Images/car1.png";
+import Link from "next/link";
+import carsData from "../../Data/CarsData";
+import CarCard from "../../Modules/CarCard/CarCard";
 const Cars = () => {
   return (
     <section className="section cars" id="cars">
@@ -15,190 +11,20 @@ const Cars = () => {
         <h1 className="sectionSub">Most popular cars for deal</h1>
       </div>
       <div className={clsx(styles.carsContainer, "container", "grid")}>
-        <div className={styles.carCards}>
-          <Image
-            className={styles.cardsImage}
-            src={Car1}
-            alt="Car"
-            width={300}
-            height={200}
-          />
-          <div className={styles.cardsHeader}>
-            <h3 className={styles.cardsName}>Car Name</h3>
-            <div className={styles.cardsScore}>
-              <Star />
-              <div className={styles.scoresNumber}>4.5</div>
-              <div className={styles.scoresReview}>(2,446 reviews)</div>
-            </div>
-          </div>
-          <div className={styles.cardsInfos}>
-            <div className={styles.cardsInfo}>
-              <div>
-                <User />
-                <span className={styles.infosText}>4 Passagers</span>
-              </div>
-              <div>
-                <AirConditioner />
-                <span className={styles.infosText}>Air Conditioning</span>
-              </div>
-            </div>
-            <div className={styles.cardsInfo}>
-              <div>
-                <Gearbox />
-                <span className={styles.infosText}>Auto</span>
-              </div>
-              <div>
-                <Doors />
-                <span className={styles.infosText}>Doors</span>
-              </div>
-            </div>
-          </div>
-          <div className={styles.cardsPrice}>
-            <span className={styles.priceText}>Price</span>
-            <span className={styles.priceNumber}>$1,000</span>
-          </div>
-          <button className={clsx(styles.cardsButton, "button")}>
-            View Details
-          </button>
-        </div>
-        <div className={styles.carCards}>
-          <Image
-            className={styles.cardsImage}
-            src={Car1}
-            alt="Car"
-            width={300}
-            height={200}
-          />
-          <div className={styles.cardsHeader}>
-            <h3 className={styles.cardsName}>Car Name</h3>
-            <div className={styles.cardsScore}>
-              <Star />
-              <div className={styles.scoresNumber}>4.5</div>
-              <div className={styles.scoresReview}>(2,446 reviews)</div>
-            </div>
-          </div>
-          <div className={styles.cardsInfos}>
-            <div className={styles.cardsInfo}>
-              <div>
-                <User />
-                <span className={styles.infosText}>4 Passagers</span>
-              </div>
-              <div>
-                <AirConditioner />
-                <span className={styles.infosText}>Air Conditioning</span>
-              </div>
-            </div>
-            <div className={styles.cardsInfo}>
-              <div>
-                <Gearbox />
-                <span className={styles.infosText}>Auto</span>
-              </div>
-              <div>
-                <Doors />
-                <span className={styles.infosText}>Doors</span>
-              </div>
-            </div>
-          </div>
-          <div className={styles.cardsPrice}>
-            <span className={styles.priceText}>Price</span>
-            <span className={styles.priceNumber}>$1,000</span>
-          </div>
-          <button className={clsx(styles.cardsButton, "button")}>
-            View Details
-          </button>
-        </div>
-        <div className={styles.carCards}>
-          <Image
-            className={styles.cardsImage}
-            src={Car1}
-            alt="Car"
-            width={300}
-            height={200}
-          />
-          <div className={styles.cardsHeader}>
-            <h3 className={styles.cardsName}>Car Name</h3>
-            <div className={styles.cardsScore}>
-              <Star />
-              <div className={styles.scoresNumber}>4.5</div>
-              <div className={styles.scoresReview}>(2,446 reviews)</div>
-            </div>
-          </div>
-          <div className={styles.cardsInfos}>
-            <div className={styles.cardsInfo}>
-              <div>
-                <User />
-                <span className={styles.infosText}>4 Passagers</span>
-              </div>
-              <div>
-                <AirConditioner />
-                <span className={styles.infosText}>Air Conditioning</span>
-              </div>
-            </div>
-            <div className={styles.cardsInfo}>
-              <div>
-                <Gearbox />
-                <span className={styles.infosText}>Auto</span>
-              </div>
-              <div>
-                <Doors />
-                <span className={styles.infosText}>Doors</span>
-              </div>
-            </div>
-          </div>
-          <div className={styles.cardsPrice}>
-            <span className={styles.priceText}>Price</span>
-            <span className={styles.priceNumber}>$1,000</span>
-          </div>
-          <button className={clsx(styles.cardsButton, "button")}>
-            View Details
-          </button>
-        </div>
-        <div className={styles.carCards}>
-          <Image
-            className={styles.cardsImage}
-            src={Car1}
-            alt="Car"
-            width={300}
-            height={200}
-          />
-          <div className={styles.cardsHeader}>
-            <h3 className={styles.cardsName}>Car Name</h3>
-            <div className={styles.cardsScore}>
-              <Star />
-              <div className={styles.scoresNumber}>4.5</div>
-              <div className={styles.scoresReview}>(2,446 reviews)</div>
-            </div>
-          </div>
-          <div className={styles.cardsInfos}>
-            <div className={styles.cardsInfo}>
-              <div>
-                <User />
-                <span className={styles.infosText}>4 Passagers</span>
-              </div>
-              <div>
-                <AirConditioner />
-                <span className={styles.infosText}>Air Conditioning</span>
-              </div>
-            </div>
-            <div className={styles.cardsInfo}>
-              <div>
-                <Gearbox />
-                <span className={styles.infosText}>Auto</span>
-              </div>
-              <div>
-                <Doors />
-                <span className={styles.infosText}>Doors</span>
-              </div>
-            </div>
-          </div>
-          <div className={styles.cardsPrice}>
-            <span className={styles.priceText}>Price</span>
-            <span className={styles.priceNumber}>$1,000</span>
-          </div>
-          <button className={clsx(styles.cardsButton, "button")}>
-            View Details
-          </button>
-        </div>
+        {carsData.map((carData) => (
+          <CarCard key={carData.id} {...carData} />
+        ))}
+      </div>
+      <div className="textAlign">
+        <Link
+          href="/CarList"
+          className={clsx(styles.carsButton, "button", "buttonFlex")}
+        >
+          Show all vehicles
+          <i
+            className={clsx(styles.carsButtonIcon, "bx bx-right-arrow-alt")}
+          ></i>
+        </Link>
       </div>
     </section>
   );

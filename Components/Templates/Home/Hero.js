@@ -1,14 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
 import clsx from "clsx";
-import carMarketImg from "../../../public/Images/car-market.jpg";
+import carMarketImg from "../../../public/Images/car-market.png";
 import styles from "./Hero.module.css";
 import Location from "../../SVGs/Location";
 import Calender from "../../SVGs/Calender";
+import HeroBG from "../../SVGs/HeroBG";
+import Easily from "../../SVGs/Easily";
 
 const Hero = () => {
   return (
     <section className="section" id="hero">
+      <HeroBG className={styles.heroBG} />
       <div className={clsx(styles.heroContainer, "container")}>
         <div className={styles.heroImg}>
           <Image src={carMarketImg} alt="Car Market" />
@@ -17,6 +20,7 @@ const Hero = () => {
           <h1 className={styles.heroTitle}>
             Find, buy and sell a car{" "}
             <span className={styles.heroTitleSpan}>Easily</span>
+            <Easily />
           </h1>
           <p className={styles.heroDesc}>
             Get a car wherever and whenever you need it with your IOS and
@@ -57,8 +61,7 @@ const Hero = () => {
               </div>
               <div className={styles.heroSearchData}>
                 <h3 className={styles.heroSearchTitle}>Return date</h3>
-                <span className={styles.heroSearchSub}>
-                Thu 16 Feb, 11:00                </span>
+                <span className={styles.heroSearchSub}>Thu 16 Feb, 11:00 </span>
               </div>
             </li>
             <li className={styles.heroSearchButton}>

@@ -108,6 +108,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+.textAlign {
+  text-align: center;
+}
 .section {
   padding: 6rem 0 2rem;
 }
@@ -142,13 +145,15 @@ img {
 }
 .button:hover {
   background-color: var(--theme-color-dark);
+  color: var(--container-color);
 }
-.buttonIcon {
-  margin-left: var(--mb-0-5);
+.buttonIcon:hover {
+ color: inherit;
 }
 .buttonFlex {
   display: inline-flex;
   align-items: center;
+  column-gap: var(--mb-0-5);
 }
 @media screen and (max-width: 992px) {
   .container {

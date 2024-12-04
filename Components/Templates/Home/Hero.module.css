@@ -4,14 +4,15 @@
   top: 10rem;
   width: 791px;
   height: 557px;
+  z-index: 100;
 }
-
 .heroTitle {
+  position: relative;
   font-family: var(--body-font);
   font-size: var(--big-font-size);
   color: var(--title-color-dark);
   font-weight: var(--font-semi-bold);
-  padding: 8rem 0 1rem;
+  padding: 8rem 0 2rem;
   line-height: 3rem;
   max-width: 400px;
   .heroTitleSpan {
@@ -54,8 +55,6 @@
   grid-template-columns: repeat(4, 1fr);
   padding: 12px;
   column-gap: 6rem;
-
-
 }
 .heroSearchItem {
   display: grid;

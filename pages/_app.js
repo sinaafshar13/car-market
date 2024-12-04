@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import Layout from '../Components/Layout/Layout'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import '../styles/globals.css'; 
+import 'boxicons/css/boxicons.min.css'; 
 
 function MyApp({ Component, pageProps }) {
 
